@@ -8,9 +8,8 @@ function WriteToLogFile ($message)
 $message +" - "+ (Get-Date).ToString() >> $logfilepath
 }
 
-
 $ApplicationPoolName = '.NET v4.5' #$item.Name
-$ApplicationPoolStatus = Get-WebAppPoolState $ApplicationPoolName
+#$ApplicationPoolStatus = Get-WebAppPoolState $ApplicationPoolName
 if((Get-WebAppPoolState -Name $applicationPoolName).Value -ne 'Started')
 {     
      Write-Host $ApplicationPoolName "found stopped."
