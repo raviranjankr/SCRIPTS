@@ -27,3 +27,10 @@ Enable-NetAdapter -Name "Wireless Network Connection"
 
 #List network adapters
 Get-NetAdapater
+
+
+<# Configuring proxy server by using netsh command #>
+#Change the directory to the system root.
+cd C:\Windows\SysWOW64
+#Type and run the following command
+netsh winhttp set proxy proxy_server_ip:proxy_port
