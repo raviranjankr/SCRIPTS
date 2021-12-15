@@ -1,2 +1,2 @@
 # SCRIPTS
-Some Useful Script
+This repo contains useful scripts related to powershell, sql server, terminal, etc.  
